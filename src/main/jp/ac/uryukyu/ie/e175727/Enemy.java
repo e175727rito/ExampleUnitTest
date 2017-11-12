@@ -47,9 +47,14 @@ public class Enemy {
      */
     public void attack(Hero hero){
         int damage = (int)(Math.random() * attack);
+        if(dead == false) {
+            hero.wounded(damage);
+        }else{
+
+        }
         System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, hero.getName(), damage);
-        hero.wounded(damage);
     }
+
 
     /**
      * 自身へ攻撃されたときのダメージ処理をするメソッド。
