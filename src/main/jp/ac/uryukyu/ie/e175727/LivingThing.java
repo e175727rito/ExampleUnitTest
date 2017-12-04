@@ -1,4 +1,4 @@
-package jp.ac.uryukyu.ie.e175727;
+/*package jp.ac.uryukyu.ie.e175727;
 
 public class LivingThing {
     String name;
@@ -39,3 +39,6 @@ public class LivingThing {
     }
 
 }
+*/
+
+
