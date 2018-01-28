@@ -1,4 +1,4 @@
-/*package jp.ac.uryukyu.ie.e175727;
+package jp.ac.uryukyu.ie.e175727;
 
 public class LivingThing {
     String name;
@@ -23,9 +23,12 @@ public class LivingThing {
     }
 
     public void attack(LivingThing opponent) {
-        int damage = (int) (Math.random() * attack);
-        System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, opponent.getName(), damage);
-        opponent.wounded(damage);
+        if (dead == false) {
+            int damage = (int) (Math.random() * attack);
+            System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, opponent.getName(), damage);
+            opponent.wounded(damage);
+
+        }
     }
 
     public void wounded(int damage) {
@@ -39,6 +42,6 @@ public class LivingThing {
     }
 
 }
-*/
+
 
 
