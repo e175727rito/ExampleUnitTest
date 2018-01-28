@@ -1,4 +1,6 @@
+
 package jp.ac.uryukyu.ie.e175727;
+
 /**
  * ヒーロークラス。
  *  String name; //敵の名前
